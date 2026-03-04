@@ -115,6 +115,32 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+.cta-container {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: var(--accent-blue);
+    color: var(--white);
+    border: none;
+}
+
+.btn.primary:hover {
+    background: var(--accent-gold);
+    transform: translateY(-2px);
+}
+
 .interests-box h3 {
     font-family: var(--font-heading);
     font-size: 0.9rem;
@@ -160,6 +186,18 @@ h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: var(--accent-blue);
+}
+
+.paper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .paper-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .paper-card {
