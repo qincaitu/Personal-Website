@@ -4,126 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chincy Qin | Personal Portfolio</title>
+    <title>Chincy Qin | Economics Portfolio</title>
+    <!-- Fonts: Lora for professional serif, Outfit for clean headers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="blob-bg"></div>
-    <div class="blob-bg blob-2"></div>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Chincy Qin</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav class="navbar">
-        <div class="logo">Chincy ✨</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-grid">
+                <div class="profile-info">
+                    <h1>Chincy Qin</h1>
+                    <p class="position">PhD Student in Economics, University of Melbourne</p>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero hidden">
-            <div class="hero-content glass-card">
-                <h1>Hi there! 👋<br>I'm <span class="highlight">Chincy Qin</span></h1>
-                <p class="subtitle">A second-year Econ PhD student working on Applied micro topics with a focus on
-                    Political Economy, Econ History, and Development Economics.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">View My Work</a>
-                    <a href="#contact" class="btn secondary">Get in Touch</a>
+                    <div class="bio">
+                        <p>I am a second-year Economics PhD student. My research focuses on <strong>Applied
+                                Microeconomics</strong>, with specific interests in <strong>Political Economy</strong>,
+                            <strong>Economic History</strong>, and <strong>Development Economics</strong>.</p>
+                    </div>
+
+                    <div class="interests-box">
+                        <h3>Research Interests</h3>
+                        <ul class="interests-list">
+                            <li>Political Economy</li>
+                            <li>Economic History</li>
+                            <li>Development Economics</li>
+                            <li>Applied Microeconomics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-photo">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Chincy&backgroundColor=f8f9fa"
+                        alt="Chincy Qin Avatar">
                 </div>
             </div>
-            <div class="hero-image glass-card hidden-delay">
-                <!-- A cute placeholder avatar -->
-                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Chincy&backgroundColor=ffdfbf,c0aede,b6e3f4"
-                    alt="Chincy Avatar">
+
+            <div class="featured-works">
+                <h2>Symbolic Works</h2>
+                <div class="paper-card symbolic">
+                    <span class="paper-tag">Featured</span>
+                    <h3>The Political Economy of Institutional Persistence</h3>
+                    <p class="authors">Chincy Qin</p>
+                    <p class="abstract">This paper investigates how historical political institutions influence
+                        long-term economic development through the lens of local governance and social capital...</p>
+                    <a href="#" class="more-link">Full Paper Coming Soon &rarr;</a>
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about hidden">
-            <div class="section-title">
-                <h2>About Me 🌸</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-text glass-card">
-                    <p>Welcome to my little corner of the internet! I am currently pursuing my PhD in Economics.</p>
-                    <p>My research interests lie primarily in Applied Microeconomics, where I explore the fascinating
-                        intersections of Political Economy, Economic History, and Development Economics.</p>
-                    <ul class="skills">
-                        <li><span>✨ Political Economy</span></li>
-                        <li><span>✨ Economic History</span></li>
-                        <li><span>✨ Development Economics</span></li>
-                        <li><span>✨ Applied Micro</span></li>
-                    </ul>
+        <!-- Research Section -->
+        <section id="research" class="content-section">
+            <h2 class="section-title">Research</h2>
+            <div class="paper-list">
+                <div class="paper-card">
+                    <h3>Market Access and Social Conflict in Developing Nations</h3>
+                    <p class="authors">Chincy Qin, [Co-author Name]</p>
+                    <p class="status">Working Paper, 2026</p>
+                    <p class="description">An empirical analysis using historical trade data to map the correlation
+                        between market integration and localized political unrest.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3>Bureaucratic Incentives and Public Goods Provision</h3>
+                    <p class="status">Work in Progress</p>
+                    <p class="description">Exploring how career incentives within administrative hierarchies affect the
+                        quality of education and healthcare in rural provinces.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects hidden">
-            <div class="section-title">
-                <h2>My Projects 🚀</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-card">
-                    <div class="project-img bg-pink">
-                        <span>🌟</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Sparkle</h3>
-                        <p>A delightful application that brings joy and productivity together in one seamless
-                            experience.</p>
-                        <a href="#" class="project-link">Read More &rarr;</a>
-                    </div>
+        <!-- Teaching Section -->
+        <section id="teaching" class="content-section">
+            <h2 class="section-title">Teaching</h2>
+            <div class="teaching-list">
+                <div class="teaching-item">
+                    <h3>Introductory Microeconomics</h3>
+                    <p class="role">Teaching Assistant | Semester 1, 2025 & 2026</p>
+                    <p class="details">Leading tutorials and grading for undergraduate students. Focus on supply and
+                        demand, market structures, and consumer theory.</p>
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card glass-card">
-                    <div class="project-img bg-blue">
-                        <span>💧</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Ocean Waves</h3>
-                        <p>An analytics dashboard with a calming interface and powerful underlying data visualizations.
-                        </p>
-                        <a href="#" class="project-link">Read More &rarr;</a>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card glass-card">
-                    <div class="project-img bg-mint">
-                        <span>🌿</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Minty Fresh API</h3>
-                        <p>A robust and completely open-source backend service for managing eco-friendly habits.</p>
-                        <a href="#" class="project-link">Read More &rarr;</a>
-                    </div>
+                <div class="teaching-item">
+                    <h3>Econometrics I</h3>
+                    <p class="role">Teaching Assistant | Semester 2, 2025</p>
+                    <p class="details">Assisted students with STATA and R applications for regression analysis and
+                        causal inference.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact hidden">
-            <div class="contact-card glass-card">
-                <h2>Let's Connect! 💌</h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                    visions.</p>
-                <a href="mailto:hello@example.com" class="btn primary large">Say Hello</a>
+        <section id="contact" class="content-section contact-section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-details card">
+                <p>Feel free to reach out for collaborations or questions regarding my research.</p>
+                <div class="contact-links">
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:xu.qin@unimelb.edu.au">xu.qin@unimelb.edu.au</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Office:</strong> University of Melbourne, Department of Economics
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Made with 💖 and a little bit of magic &copy; 2026 Chincy Qin</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Chincy Qin | Built for Economists</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
